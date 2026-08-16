@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>از به‌رنگ‌خدا چه خبر؟</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="badge">📰 خبرساز هفتگی</div>
+      <h1>از به‌رنگ‌خدا چه خبر؟</h1>
+      <p>اتفاقات این هفته رو همین‌جا بریز؛ خبر جذابش با ما! 😎</p>
+    </section>
+
+    <section class="card">
+      <label for="raw">اتفاقات این هفته</label>
+      <textarea id="raw" placeholder="مثلاً:
+پنجشنبه بچه‌های پایه نهم حلقه داشتن.
+موضوع درباره انتخاب رشته بود.
+کلی سؤال پرسیدن و مربی‌ها درباره رشته‌ها توضیح دادن.
+هم‌زمان تعمیرات سالن هم ادامه داشت..."></textarea>
+
+      <div class="actions">
+        <button id="mic" class="secondary">🎙️ ورود صوتی</button>
+        <button id="generate" class="primary">✨ تولید خبر</button>
+      </div>
+
+      <div id="status" class="status"></div>
+    </section>
+
+    <section id="resultCard" class="card result hidden">
+      <div class="resultHead">
+        <h2>خبر آماده شد ✨</h2>
+        <button id="copy" class="copy">کپی متن</button>
+      </div>
+      <div id="result"></div>
+    </section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap');
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Vazirmatn", Tahoma, sans-serif;
+  background: #f5f7fb;
+  color: #172033;
+}
+
+.shell {
+  width: min(820px, calc(100% - 28px));
+  margin: 0 auto;
+  padding: 48px 0 70px;
+}
+
+.hero {
+  text-align: center;
+  padding: 28px 10px 24px;
+}
+
+.badge {
+  display: inline-block;
+  background: #e9efff;
+  color: #3157c8;
+  border-radius: 999px;
+  padding: 7px 13px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+h1 {
+  margin: 18px 0 8px;
+  font-size: clamp(30px, 6vw, 48px);
+  letter-spacing: -1px;
+}
+
+.hero p {
+  margin: 0;
+  color: #667085;
+  font-size: 16px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e7eaf0;
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 12px 35px rgba(20, 32, 55, .06);
+  margin-top: 18px;
+}
+
+label {
+  display: block;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+textarea {
+  width: 100%;
+  min-height: 260px;
+  resize: vertical;
+  border: 1px solid #dfe3ea;
+  border-radius: 18px;
+  padding: 18px;
+  font: inherit;
+  line-height: 2;
+  outline: none;
+  background: #fbfcfe;
+}
+
+textarea:focus {
+  border-color: #8097e8;
+  box-shadow: 0 0 0 4px rgba(82, 111, 205, .10);
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+button {
+  border: 0;
+  border-radius: 14px;
+  padding: 13px 18px;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.primary {
+  flex: 1;
+  background: #172033;
+  color: #fff;
+}
+
+.secondary, .copy {
+  background: #eef1f6;
+  color: #273247;
+}
+
+button:disabled {
+  opacity: .55;
+  cursor: wait;
+}
+
+.status {
+  min-height: 26px;
+  padding-top: 12px;
+  color: #667085;
+  font-size: 13px;
+}
+
+.result h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.resultHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+#result {
+  white-space: pre-wrap;
+  background: #f8f9fc;
+  border-radius: 18px;
+  padding: 20px;
+  line-height: 2;
+  font-size: 17px;
+}
+
+.hidden { display: none; }
+
+@media (max-width: 560px) {
+  .shell { padding-top: 22px; }
+  .card { padding: 18px; border-radius: 20px; }
+  .actions { flex-direction: column; }
+  .primary { width: 100%; }
+  .resultHead { align-items: flex-start; flex-direction: column; }
+}
